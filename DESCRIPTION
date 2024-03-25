@@ -1,11 +1,11 @@
 Package: Project2Caba0009
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Project 2
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Tanner Cabaniss
+Maintainer: Tanner Cabaniss <cabanisstanner@gmail.com>
+Description: This project imploys several investigative techniques including multivariate normality, Hotellings T
+    square test, MLR, and PCA.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
