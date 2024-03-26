@@ -40,7 +40,14 @@ We can clearly see from the compared Chi-Square plots that we were able to reduc
 
 ## Hotellings T square test
 
-```{r}
-
+```{r, fig.align='center', fig.height=15, fig.width=5}
+data <- T5_1
+H0 <- c(4,50,10)
+alpha <- 0.10
+results <- HotellingTSq(data, H0, alpha)
+print(results)
 ```
 
+The example above follows Example 5.2 from the book about the sweat data. Comparing with the results in the book we see agreement in both the $T^2$ value of 9.74 based on the hypothesize mean vector [4,50,10] and the provided data as well as the critical value of ~8.18. This function also presents the confidence ellipse plots for each pairing of variables which agree with the conclusion reached by the Hotelling's $T^2$ test in rejecting the null hypothesis.
+
+## Multivariate Linear Regression

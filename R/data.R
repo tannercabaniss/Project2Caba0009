@@ -13,3 +13,17 @@
 #' part of the original data.
 #' @source Applied Multivariate Statistical Analysis 6th Edition by R. Johnson and D. Wichern
 "T4_3"
+
+#' Table 5.1 (Sweat Data)
+#'
+#' A data set containing information regarding sweating for 20 individuals
+#'
+#' @format a data frame containing 20 rows and 3 columns:
+#' \itemize{
+#'   \item SweatRate: Arbitrary measurement of the rate of excretion
+#'   \item Sodium: Relative level of sodium in sweat
+#'   \item Potassium: Relative level of sodium in sweat
+#' }
+#' Note: There were no units or scale given with this data.
+#' @source Applied Multivariate Statistical Analysis 6th Edition by R. Johnson and D. Wichern
+"T5_1"
