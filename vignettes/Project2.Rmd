@@ -1,0 +1,46 @@
+---
+title: "Project2"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Project2}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Project2Caba0009)
+```
+
+# Introduction
+In this project we were asked perform several analyses from the book. These analyses included checking for multivariate normality as well as carrying out a box cox transformation, a Hotellings T square test, a MLR, and a PCA.
+
+# Analyses
+This section will include all the aforementioned analysis techniques in order.
+
+## Multivariate Normality
+Here we are checking for multivariate normality. We will do so by first creating a Chi-Square plot of the original data, performing a box cox transformation to transform the data to a more normal state, and successively creating a Chi-Square plot of the transformed data for comparison. The function created will also output the optimal lambda values used for transforming each column of the data as well as outputting the transformed data.
+
+```{r, fig.align='center', fig.width=8, fig.height=4}
+data <- T4_3
+print("Original Data")
+print(data)
+output <- mvNormCheck(data)
+print(output$optimal_lambdas)
+print(output$transformed_data)
+```
+
+We can clearly see from the compared Chi-Square plots that we were able to reduce the non normality of some of the outliers in the original data using the box cox transformation. However, the furthest outlier was unable to be reduced as the lambda values are calculated for the data column as a whole and not specifically to any individual outlier. Yet, it is encouraging to see the positive changes towards normality for the data sans the farthest outlying point.
+
+## Hotellings T square test
+
+```{r}
+
+```
+
