@@ -1,0 +1,13 @@
+test_that("Check error catching", {
+  expect_error(mvReg(c(12,11,2,3,4,5,76,45,4,4,)))
+  expect_error(mvReg(matrix(c("-1","2","3","4","5","6","7","8","9"), nrow=3, ncol=3, byrow=TRUE)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = NULL, independent_indices = c(1,2)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 1.2, independent_indices = c(1,2)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 4, independent_indices = c(1,2)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 0, independent_indices = c(1,2)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 3, independent_indices = NULL))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 3, independent_indices = c(1.2,2.5)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 3, independent_indices = c(0,2)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 3, independent_indices = c(1,4)))
+  expect_error(mvReg(matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, ncol=3, byrow=TRUE), target_index = 3, independent_indices = c(-1,4)))
+})

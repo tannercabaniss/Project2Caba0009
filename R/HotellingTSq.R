@@ -27,6 +27,7 @@ HotellingTSq <- function(data, H0, alpha=0.05) {
 
   if (!all(apply(data, 2, function(x) all(is.numeric(x))))) {
     rlang::abort("The data provided is not numeric")
+    return(NULL)
   }
 
   data_mat <- as.matrix(data)

@@ -25,10 +25,12 @@ mvNormCheck <- function(data) {
 
   if (!all(apply(data, 2, function(x) all(is.numeric(x))))) {
     rlang::abort("The data provided is not numeric")
+    return(NULL)
   }
 
   if (!all(data >0)) {
     rlang::abort("The data provided is not all positive")
+    return(NULL)
   }
 
   xbar <- colMeans(data_mat)

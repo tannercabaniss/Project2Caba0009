@@ -2,7 +2,12 @@
 
 export(HotellingTSq)
 export(mvNormCheck)
+export(mvReg)
+importFrom(graphics,abline)
+importFrom(stats,as.formula)
 importFrom(stats,cov)
+importFrom(stats,fitted)
+importFrom(stats,lm)
 importFrom(stats,optimize)
 importFrom(stats,qchisq)
 importFrom(stats,qf)

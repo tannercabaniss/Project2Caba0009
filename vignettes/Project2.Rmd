@@ -48,6 +48,27 @@ results <- HotellingTSq(data, H0, alpha)
 print(results)
 ```
 
-The example above follows Example 5.2 from the book about the sweat data. Comparing with the results in the book we see agreement in both the $T^2$ value of 9.74 based on the hypothesize mean vector [4,50,10] and the provided data as well as the critical value of ~8.18. This function also presents the confidence ellipse plots for each pairing of variables which agree with the conclusion reached by the Hotelling's $T^2$ test in rejecting the null hypothesis.
+The example above follows Example 5.2 from the book about the sweat data. Comparing with the results in the book we see agreement in both the $T^2$ value of 9.74 based on the hypothesize mean vector [4,50,10] and the provided data as well as the critical value of ~8.18. This function also presents the confidence ellipse plots for each pairing of variables which appropriately captures the majority of the data confirming the validity of the Hotelling's $T^2$ test for this data set.
 
 ## Multivariate Linear Regression
+To make a multivariate linear regression for data, we utilized the lm() function alongside generalized code that is easily adapted to a range of data set sizes and complexities.
+```{r, fig.align='center', fig.height=6, fig.width=6}
+data <- T7_1
+target_index = 3
+ind_indices = c(1,2)
+results <- mvReg(data, target_index=target_index, ind_index=ind_indices)
+
+print("Coefficients of fitted model")
+print(results$coefficients)
+
+print("Standard deviations of coefficients")
+print(results$standardDev)
+
+print("R Squared of model")
+print(results$rSquared)
+
+print("Full fitted model")
+print(results$fitted_model)
+```
+
+The coefficients found for the model result in a fitted equation of $\hat{y} = 30.967 + 2.634z_1 + 0.045z_2$ matching that of the results seen in the book. The estimated standard deviations of the least squares coefficients are also shown matching the book's results.The $R^2$ of 0.834 also agrees with the book. Further, we can see from the fitted vs observed values plot that we have general agreement between the two axes increasing our confidence in the model.

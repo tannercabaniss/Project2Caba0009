@@ -27,3 +27,16 @@
 #' Note: There were no units or scale given with this data.
 #' @source Applied Multivariate Statistical Analysis 6th Edition by R. Johnson and D. Wichern
 "T5_1"
+
+#' Table 7.1 (Real-Estate Data)
+#'
+#' A data set containing information regarding homes in a Milwaukee, Wisconsin neighborhood
+#'
+#' @format a data frame containing 20 rows and 3 columns:
+#' \itemize{
+#'   \item Total dwelling size: The square footage of the home in hundreds of square feet
+#'   \item Assessed value: The value of the home in thousands of dollars
+#'   \item Selling price: The selling price of the home in thousands of dollars
+#' }
+#' @source Applied Multivariate Statistical Analysis 6th Edition by R. Johnson and D. Wichern
+"T7_1"
