@@ -40,3 +40,18 @@
 #' }
 #' @source Applied Multivariate Statistical Analysis 6th Edition by R. Johnson and D. Wichern
 "T7_1"
+
+#' Table 8.5 (Census-tract Data)
+#'
+#' A data set containing information regarding census demographics
+#'
+#' @format a data frame containing 61 rows and 5 columns:
+#' \itemize{
+#'   \item Total population: The total population the area in thousands of people
+#'   \item Profession: The percentage of people with professional degrees in the area
+#'   \item Employment (%): The percentage of people over the age of 16 employed in the area
+#'   \item Government Employment (%): The percentage of people employed by the government in the area
+#'   \item Medium Home Value: The median home value for the area in hundreds of thousands of dollars
+#' }
+#' @source Applied Multivariate Statistical Analysis 6th Edition by R. Johnson and D. Wichern
+"T8_5"

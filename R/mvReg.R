@@ -2,11 +2,11 @@
 #'
 #' This function uses a least squares approach to fit a multivariate linear model to the input data.
 #'
-#' @param data multivariate input data including a target varialbe and related independent variables
+#' @param data multivariate input data including a target variable and related independent variables
 #' @param target_index the column index of the target variable
 #' @param ind_index an array of the independent variables by their respective column indices
 #'
-#' @return the calculated multivariate linear regression  model and a plot showing the fitment of the model with the data
+#' @return the calculated multivariate linear regression  model, coefficients, standard deviations of the coefficients, the R-squared value for the fitted model, and a plot showing the fitment of the model with the data
 #' @export
 #' @importFrom graphics abline
 #' @importFrom stats as.formula fitted lm

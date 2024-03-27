@@ -7,14 +7,14 @@
 mvReg(data, target_index = NULL, ind_index = NULL)
 }
 \arguments{
-\item{data}{multivariate input data including a target varialbe and related independent variables}
+\item{data}{multivariate input data including a target variable and related independent variables}
 
 \item{target_index}{the column index of the target variable}
 
 \item{ind_index}{an array of the independent variables by their respective column indices}
 }
 \value{
-the calculated multivariate linear regression  model and a plot showing the fitment of the model with the data
+the calculated multivariate linear regression  model, coefficients, standard deviations of the coefficients, the R-squared value for the fitted model, and a plot showing the fitment of the model with the data
 }
 \description{
 This function uses a least squares approach to fit a multivariate linear model to the input data.
